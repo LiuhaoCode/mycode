@@ -1,0 +1,338 @@
+﻿@charset "utf-8";
+/* CSS Document */
+* {
+	font-family: "Arial" , "微软雅黑";
+	box-sizing: border-box;
+}
+p {
+	text-indent: 2em;
+	text-align: justify;
+}
+
+/**************** banner ****************/
+
+.banner form .btn,
+.banner .nav li,
+.banner .nav li div span {
+	transition: all ease .3s;
+}
+.banner {
+	min-width: 100%;
+	min-width: 800px;
+	background: url(../images/bnr.jpg) no-repeat 0 0;
+	background-size: cover;
+	padding: 2em 0 1.5em 0;
+	color: #fff;
+}
+	/*********** nav ***********/
+.banner .nav {
+	width: 100%;
+	height: 4.1em;
+}
+.banner .nav ul {
+	width: 62em;
+	height: 4em;
+	margin: 0 auto;
+}
+.banner .nav li {
+	float: left;
+	margin: 1.4em 1em;
+	padding: 0 1.5em;
+	cursor: pointer;
+	position: relative;
+}
+.banner .nav li div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+.banner .nav li div span {
+	opacity: 0;
+	color: #3DED61;
+}
+.banner .nav li:hover {
+	color: #3DED61;
+}
+.banner .nav li:hover span{
+	opacity: 1;
+}
+.banner .nav li:hover span:last-child {
+	margin-left: 70%;
+}
+	/*********** nav ***********/
+.banner h1 {
+	width: 27em;
+	margin: 6em auto 0 auto;
+	font-size: 36px;
+	font-family: "隶书";
+	text-align: center;
+}
+.banner p {
+	display: block;
+	width: 30em;
+	font-family: "隶书";
+	text-indent: 0;
+	margin: 10em auto 0 auto;
+}
+.banner form {
+	width: 50em;
+	height: 2.5em;
+	margin: 1em auto;
+}
+.banner form input {
+	width: 42%;
+	font-size: 14px;
+	padding: 10px 8px;
+	background: rgba(0,0,0,0);
+	margin: 0 auto;
+	border-bottom: 1px solid #999;
+}
+.banner form .btn {
+	width: 11%;
+	height: 2.5em;
+	text-align: center;
+	border-radius: 0.3em;
+	border: 1px solid #5ACC42;
+	line-height: 2.5em;
+	cursor: pointer;
+	font-family: "隶书";
+	background: #5ACC42;
+	float: right;
+}
+.banner form .btn:hover {
+	color: #5ACC42;
+	background: rgba(0,0,0,0);
+}
+/**************** banner ****************/
+
+/**************** middle ****************/
+
+.middle {
+	width: 100%;
+	background: #5ACC42;
+	color: #333;
+	padding: 60px 0; 
+}
+.about,
+.Services,
+.Gallery,
+.Contact {
+	width: 1170px;
+	margin: 0 auto 60px auto;
+	box-shadow: 0 0 20px 2px #333;
+	background: rgba(255,255,255,.8);
+	padding: 40px 28px;
+}
+
+.about h1,
+.Services h1,
+.Gallery h1,
+.Contact h1 {
+	color: #1e9323;
+	text-align: center;
+	font-weight: normal;
+	margin-bottom: 40px;
+	font-size: 45px;
+}
+
+/******* about *******/
+
+.about .top {}
+.about h2 {
+	color: black;
+}
+.about .top p {
+	color: #333;
+	margin: 20px;
+	font-size: 14px;
+	line-height: 20px;
+}
+.about h2 {
+	color: #111;
+	font-size: 20px;
+	margin: 15px 0;
+}
+
+.about .bottom {
+	width: 50%;
+	margin-top: 50px;
+	padding: 10px;
+}
+.about .bottom h1 {
+	color: rgb(60,60,60);
+	font-size: 24px;
+}
+.about .bottom h2 {
+	color: #5ACC42;
+	font-size: 18px;
+}
+.about .bottom p {
+	color: #333;
+	font-size: 14px;
+	line-height: 22px;
+	margin: 20px;
+}
+.about > img {
+	float: right;
+	margin: -320px 0 0 0;
+}
+
+/******* about *******/
+
+
+/******* Services *******/
+
+.Services ul {}
+.Services ul li {
+	margin: 50px 0 20px 0;
+}
+.Services ul li h1 {
+	color: #5ACC42;
+	font-size: 24px;
+	margin-bottom: 15px;
+}
+.Services ul li p {
+	color: #333;
+	font-size: 14px;
+	line-height: 24px;
+}
+.Services ul li div{
+	width: 70%;
+	float: right;
+	margin-top: -165px;
+}
+
+/******* Services *******/
+
+
+/******* Gallery *******/
+
+.Gallery {
+	height: 60em;
+}
+.Gallery ul {
+}
+.Gallery ul li {
+	width: 30%;
+	margin: 0 0 3% 2.6%;
+	float: left;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+.Gallery ul li:hover img {
+	transform: scale(1.3);
+}
+.Gallery ul li:hover div {
+	transform: rotateX(0deg);
+}
+.Gallery ul li img {
+	width: 100%;
+	transform-origin: center;
+	transition: all ease .5s;
+}
+.Gallery ul li > div {
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,.8);
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform-origin: center;
+	transition: all ease .5s;
+	transform: rotateX(90deg);
+	z-index: 100;
+	color: #1e9323;
+}
+.Gallery ul li > div h1 {
+	font-size: 30px;
+	margin: 2em 0 1em 0;
+	text-align: center;
+}
+.Gallery ul li > div p {
+	font-size: 20px;
+}
+
+/******* Gallery *******/
+
+
+/******* Contact *******/
+
+.Contact {
+	box-shadow: none;
+	background: none;
+}
+.Contact h1{
+	color: #fff;
+}
+.Contact input {
+	border: 1px solid #777;
+	width: 100%;
+	font-size: 16px;
+	padding: 0 0.5em;
+	color: #1e9323;
+	line-height: 3em;
+	box-shadow: none;
+	margin: 0 0 1.5em 0;
+	background: rgba(255,255,255,.8);
+}
+.Contact .message {
+	background: rgba(255,255,255,.8);
+}
+.Contact .left {
+	width: 47%;
+	float: left;
+	margin-right: 3%;
+}
+.Contact .left .phone {
+	margin: 0;
+}
+.Contact .message {
+	width: 50%;
+	border: 1px solid #777;
+	font-size: 16px;
+	padding: 0.7em;
+	line-height: 1.5em;
+	resize: none;
+	color: #1e9323;
+	box-shadow: none;
+	margin: 0 0 1.5em 0;
+}
+.Contact .submit {
+	border: 2px solid #777;
+	background: #fff;
+	transition: all ease .5s;
+	font-weight: 700;
+	cursor: pointer;
+}
+.Contact .submit:hover {
+	border: 2px solid #1e9323;
+	background: rgba(0,0,0,0);
+	color: #fff;
+}
+
+/******* Contact *******/
+
+/**************** middle ****************/
+
+
+/**************** footer ****************/
+
+.footer {
+	padding: 1.6em;
+}
+.footer p {
+	font-size: 14px;
+	text-align: center;
+}
+.footer p a {
+	transition: all ease .5s;
+}
+.footer p a:hover {
+	color: #1e9323;
+	text-decoration: underline;
+}
+
+/**************** footer ****************/
